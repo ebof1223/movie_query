@@ -23,8 +23,6 @@ def main() -> int:
     parser.add_argument('--actor', type=str)
     parser.add_argument('--runtime-more-than', type=str)
     parser.add_argument('--gross-min', type=int)
-    parser.add_argument('--output-format', type=str)
-    parser.add_argument('--output-file', type=str)
 
     args = parser.parse_args()
     path = args.input or ""
@@ -54,6 +52,7 @@ def main() -> int:
             if args.gross_min and item["gross"].isdigit() and int(item["gross"]) <= args.gross_min:
                 continue
             print(list(item.values()))
+
     return 0
 
 main()
