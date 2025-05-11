@@ -8,5 +8,9 @@
   2. flags are optional by default and if provided have type safety so validation should be good
 
 ## Output
-  1.std out headers 
-  2.std out each row each that meets input constraints
+  1. added flags via argparse
+  2. flags are optional by default and if provided have type safety so validation should be good
+  3. Didnt provide domain constraints e.g
+    1. years (invalid years or years after current year + 1)  
+    2. ratings (less than 0 or greater than 10)
+    3. runtime (less than 0)
